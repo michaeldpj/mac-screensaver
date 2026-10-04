@@ -13,11 +13,12 @@ at Login. The classic `.saver` builds and installs, but macOS 26 (Tahoe) does
 not currently load third-party `.saver` bundles into its screensaver host (an OS-side issue —
 no dlopen attempt is made; see `CHANGELOG.md`/plans).
 
-**External displays:** fullscreen Metal output on external displays has kernel-panicked an M5 Max
-on macOS 26.5.1 (AppleDCP `DCPEXT0`, see `docs/CRASH-ANALYSIS.md`). Rendering is therefore limited
-to the built-in display by default, and external displays stay black. The External Ultra-Lite mode
-is experimental and opt-in, so follow `docs/SAFE-TESTING.md` before enabling it, and use it at your
-own risk.
+**External displays:** with **External Displays — Ultra-Lite 30 FPS** enabled, Seasons runs across
+three external displays on an M5 Max as one continuous panorama, with particles drifting from one
+screen to the next. That mode fixed the AppleDCP `DCPEXT0` kernel panics that earlier builds hit
+when they drove externals with EDR at full quality on macOS 26.5.1 (see `docs/CRASH-ANALYSIS.md`).
+It stays opt-in, so externals remain black until you turn it on, and `docs/SAFE-TESTING.md` walks
+through staged tests if you want to check your own hardware first.
 
 ## Prerequisites
 
