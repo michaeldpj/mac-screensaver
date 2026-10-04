@@ -1,0 +1,44 @@
+/* Atmosphere layer from mdpj.me — recreate natively (gradient + grain over dark field).
+   Palette authored in OKLCH; map to Display P3 for the native build, do not clamp to sRGB. */
+
+:root {
+  --bg: oklch(12% 0 0);          /* dark base field */
+  --accent: oklch(75% 0.15 70);  /* warm amber */
+  --season-tint: oklch(25% 0.04 95 / 0.15);
+}
+
+/* Per-season radial tint behind everything (~15% over the dark base) */
+[data-season="winter"] { --season-tint: oklch(25% 0.03 230 / 0.15); } /* cool blue */
+[data-season="spring"] { --season-tint: oklch(25% 0.04 25 / 0.15); }  /* rose */
+[data-season="summer"] { --season-tint: oklch(25% 0.04 95 / 0.15); }  /* amber */
+[data-season="autumn"] { --season-tint: oklch(25% 0.04 50 / 0.15); }  /* orange */
+
+/* Particle canvas sits behind site content (z-index 0) so DOM occludes particles
+   for natural depth. No DOM in the screensaver — reproduce with parallax/DOF layers. */
+.season-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Radial gradient tint */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(ellipse 80% 50% at 50% 20%, var(--season-tint), transparent 70%);
+}
+
+/* Fractal-noise grain overlay at ~3.5% opacity */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.035;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

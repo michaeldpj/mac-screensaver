@@ -1,0 +1,1152 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0251BB86D903E0C0583276C0 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D444C7BBD10E1A112EB7F031 /* ScreenSaver.framework */; };
+		03801421C886641DD93722DD /* RenderResourcePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F61C0688738C33C416CF3 /* RenderResourcePlan.swift */; };
+		039A27DB0E29637734713BA7 /* Governor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CB04794E975DB8385992D /* Governor.swift */; };
+		0661232E890F4B853F9E5746 /* AdaptiveCadence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA9A69C55403B22C36CE6 /* AdaptiveCadence.swift */; };
+		08435895EE64F4C1DC65FF06 /* FrameActivityPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8D0930913817DAAEE8147 /* FrameActivityPolicy.swift */; };
+		0922168B838530AFA9E34331 /* ShotResourcePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86D9FDD761861FF6AB24EE /* ShotResourcePolicy.swift */; };
+		0EFB047640F31EE53C91DBF5 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4131902CA1C59ABD80FFD /* Defaults.swift */; };
+		147492DFC925AE5676FA4984 /* ConfigSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C51F80FDB671091BA3273 /* ConfigSheet.swift */; };
+		14BCD514A1276F5DF93D8B3A /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D444C7BBD10E1A112EB7F031 /* ScreenSaver.framework */; };
+		152FF7D2B8591082A57E73CC /* FrameActivityPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8D0930913817DAAEE8147 /* FrameActivityPolicy.swift */; };
+		18688B19EBD1B502EC300176 /* Bake.metal in Sources */ = {isa = PBXBuildFile; fileRef = DAA6E2B4819DA3E0128E8197 /* Bake.metal */; };
+		19D45CEDCFBF71D42FA0479D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7460ED987559A3D140269 /* Renderer.swift */; };
+		1B54C9BDA64BC952CF1AA2D4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA86B94BF49DEC51E027B3 /* Color.swift */; };
+		1B84052FE9CF73B68C193CC8 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FD5267F471DC7F8222A192 /* MetalKit.framework */; };
+		1D37DB0EBE64C9465ED3ACEA /* DisplayPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBDE4EFE3A2DDFEEE3626E /* DisplayPlanTests.swift */; };
+		212676D90AF9258ECFD236F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69564F51EE6D4E7E5EE637DD /* QuartzCore.framework */; };
+		21879CB23C2C2D02CAF179B5 /* ShotResourcePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86D9FDD761861FF6AB24EE /* ShotResourcePolicy.swift */; };
+		248C2F7F5B603BA4E8DC590D /* WindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614661EF4774636720BFAE3 /* WindModel.swift */; };
+		2A8B13D2505AD674DB6CC2D6 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C6705CA5611503B3507F1 /* Mesh.swift */; };
+		2AC551399C3A565B36520255 /* Post.metal in Sources */ = {isa = PBXBuildFile; fileRef = 011F314B36486EDAE68BFBAC /* Post.metal */; };
+		2B807CBB482067F5336C127C /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C6705CA5611503B3507F1 /* Mesh.swift */; };
+		2F852C41D55A48B9C1F6AE96 /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3BF89F5D5D56A11184903A /* SeasonsView.swift */; };
+		310D89F4A27C89CA69F688E8 /* PresentationColorPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68BB7E17B6A84F2562266C /* PresentationColorPolicy.swift */; };
+		3237820D1020B8EA430200EF /* Particles.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3959B92548B64043F380940 /* Particles.metal */; };
+		39AF5A7CD60230FF3AB1F72B /* Governor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CB04794E975DB8385992D /* Governor.swift */; };
+		3B2BD3E9602534442A76FD7D /* DisplayPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E25CA0A65B255B4A74B00C /* DisplayPolicy.swift */; };
+		3B38994940CFE81CDC11A4AA /* seasons in Resources */ = {isa = PBXBuildFile; fileRef = 04336A41F257C12602714A26 /* seasons */; };
+		3BEDBE9D27F46AF44294F610 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4131902CA1C59ABD80FFD /* Defaults.swift */; };
+		3C4AEA72E34DB3B0532E136C /* QualityTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1ADA517FDC76D9F45FBDD2 /* QualityTier.swift */; };
+		3E23159C68A46BEE3AB7E3B4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95575D6F800CCF67E66C43AF /* main.swift */; };
+		417A67A3F8E858A82050AD0F /* Particles.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3959B92548B64043F380940 /* Particles.metal */; };
+		41ACD0FED8E3F3824146A797 /* ViewDisplaySafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120B5E99FC4FFDAC95ED682 /* ViewDisplaySafety.swift */; };
+		42513F86888B0A1B1716AF98 /* SeasonCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC7A5D9EB89142AC09C79 /* SeasonCatalog.swift */; };
+		446CA782E820DE004EE59520 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A98F2911EB55A26B74557 /* ParticleSystem.swift */; };
+		47CD0CE46FE0D04BC0A5F7F0 /* ViewDisplaySafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120B5E99FC4FFDAC95ED682 /* ViewDisplaySafety.swift */; };
+		48321F08609921CC70D51ECF /* SpriteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6620108DABD4569D71FF34DE /* SpriteLoader.swift */; };
+		48E5B5D941479DFADF7BC11A /* Panorama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB7A0F316AA91E58F54704 /* Panorama.swift */; };
+		49AF98625F9B427432D8B960 /* FrameActivityPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14810FD288E47B2008749808 /* FrameActivityPolicyTests.swift */; };
+		49B381478A21E6D8EE4CEE82 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7460ED987559A3D140269 /* Renderer.swift */; };
+		49E6C752D5DE8BBC545C1702 /* PresentationColorPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68BB7E17B6A84F2562266C /* PresentationColorPolicy.swift */; };
+		4A44D870EDA10563FE0DA86E /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FD5267F471DC7F8222A192 /* MetalKit.framework */; };
+		4F712A18F60A906BDC281FB5 /* Panorama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB7A0F316AA91E58F54704 /* Panorama.swift */; };
+		505BE9705E07D4EAA615028C /* Particles.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3959B92548B64043F380940 /* Particles.metal */; };
+		514965DE5C465A66F710A2B8 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E591C1A9CDB39A8514A97C54 /* ColorTests.swift */; };
+		514D1CE1B173DA5B19DED1E8 /* UltraLiteQualityPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B22D14CFD51BC934D42603E /* UltraLiteQualityPolicyTests.swift */; };
+		5259F266DA1C9B83CDC9DDE2 /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3BF89F5D5D56A11184903A /* SeasonsView.swift */; };
+		52CE8C8D043ECBCA18A8F3F8 /* ShotResourcePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86D9FDD761861FF6AB24EE /* ShotResourcePolicy.swift */; };
+		553926007627049D7ACA0EDB /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3BF89F5D5D56A11184903A /* SeasonsView.swift */; };
+		56427F41E7AE544FF68A81D2 /* Post.metal in Sources */ = {isa = PBXBuildFile; fileRef = 011F314B36486EDAE68BFBAC /* Post.metal */; };
+		58DA6B4220E7D1798935A621 /* SeasonCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC7A5D9EB89142AC09C79 /* SeasonCatalog.swift */; };
+		5C97CBD004A0CC2743E61A19 /* PresentationColorPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD1EE3F16F878514F1D9A54 /* PresentationColorPolicyTests.swift */; };
+		5D5101080EAE84542AA59933 /* WindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614661EF4774636720BFAE3 /* WindModel.swift */; };
+		5DFECEF21E7A5D62DE4200F0 /* Governor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CB04794E975DB8385992D /* Governor.swift */; };
+		601DA616B8288194965F52B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A421C798598821BFD592CD41 /* main.swift */; };
+		63612E90F33254F2B6CC8E44 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4131902CA1C59ABD80FFD /* Defaults.swift */; };
+		636D9D522E8BE8B09867548B /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A98F2911EB55A26B74557 /* ParticleSystem.swift */; };
+		658B25EA5DF857127E336C43 /* ShotPerformancePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B28D5178ABA777723B66D /* ShotPerformancePolicy.swift */; };
+		664D2F6B6B15A0FE80CD949A /* ViewDisplaySafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120B5E99FC4FFDAC95ED682 /* ViewDisplaySafety.swift */; };
+		671F80C73F73B0839CAAA37A /* DisplayDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173A573EB77A276F73E211D /* DisplayDecision.swift */; };
+		674026AD392866BDB8E801D1 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 9D913B2229D9B8A00B028C5D /* sprites */; };
+		67BD153EA282845BCF83C8FA /* ShotResourcePolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197E49B4AD0A7C1AEA27EEF /* ShotResourcePolicyTests.swift */; };
+		6860AFD8D23CC2EB4069D514 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7460ED987559A3D140269 /* Renderer.swift */; };
+		6AAE475C60CE96E3C9EC9827 /* ShotResourcePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86D9FDD761861FF6AB24EE /* ShotResourcePolicy.swift */; };
+		6BC53470585AB7EB49CA079B /* Panorama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB7A0F316AA91E58F54704 /* Panorama.swift */; };
+		6C83984167C4C792C8F1F467 /* Common.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFDD1C470918523F1A4423 /* Common.metal */; };
+		6DCF66CD773AFF39E56CD873 /* ShotPerformancePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B28D5178ABA777723B66D /* ShotPerformancePolicy.swift */; };
+		6DE37D82BC5C18079C512B27 /* SpriteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6620108DABD4569D71FF34DE /* SpriteLoader.swift */; };
+		6E1E91F3F73DCABABE54A414 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA86B94BF49DEC51E027B3 /* Color.swift */; };
+		6FD5D1FB0FE4D820BA828E00 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A3F3B1BF40DFE3F44D4C9 /* Season.swift */; };
+		6FFA4E422CD1CB1A49267581 /* PresentationColorPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68BB7E17B6A84F2562266C /* PresentationColorPolicy.swift */; };
+		722E084B170E51688B0CEEB6 /* ViewDisplaySafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120B5E99FC4FFDAC95ED682 /* ViewDisplaySafety.swift */; };
+		73FE688C8A2B94A856DECCFD /* WindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614661EF4774636720BFAE3 /* WindModel.swift */; };
+		778A07BF0C8E2914A10B43EB /* QualityTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1ADA517FDC76D9F45FBDD2 /* QualityTier.swift */; };
+		77CBFF81BD2CD477AD68349F /* FairSubmitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFA17325619A89AF53B01BE /* FairSubmitCoordinator.swift */; };
+		782514AFEDEA1C65CCC55190 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C6705CA5611503B3507F1 /* Mesh.swift */; };
+		782ECC3C866B41D75D08AA94 /* RenderResourcePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F61C0688738C33C416CF3 /* RenderResourcePlan.swift */; };
+		79D1239304C6BF4FB3D82B16 /* QualityTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1ADA517FDC76D9F45FBDD2 /* QualityTier.swift */; };
+		7BD73E66363D1672F527CD7C /* DisplayDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173A573EB77A276F73E211D /* DisplayDecision.swift */; };
+		7C8153915DB06F331BB9AF04 /* Governor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CB04794E975DB8385992D /* Governor.swift */; };
+		7D091732A810B895A591EB86 /* SeasonCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC7A5D9EB89142AC09C79 /* SeasonCatalog.swift */; };
+		81445FCA7BD9D078B570E129 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0869B63402D1BC012B49C2C9 /* Metal.framework */; };
+		814837E56266A1A8A2FECA29 /* FairSubmitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFA17325619A89AF53B01BE /* FairSubmitCoordinator.swift */; };
+		81565D97E81F199E10B11201 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4131902CA1C59ABD80FFD /* Defaults.swift */; };
+		8193C6AA3EF2F0A7BD1090BF /* SeasonCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD1F5DCA2B65C5B8B4131F /* SeasonCatalogTests.swift */; };
+		81F25DC3E16E229834164F7E /* AdaptiveCadenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF2B0E4DF9D5C0A288BAA2 /* AdaptiveCadenceTests.swift */; };
+		82998DBBBF81C38393C38847 /* Post.metal in Sources */ = {isa = PBXBuildFile; fileRef = 011F314B36486EDAE68BFBAC /* Post.metal */; };
+		839F07BC1F5A95223DD4F7D6 /* RenderResourcePlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58F45E39D451827C7A6AE5 /* RenderResourcePlanTests.swift */; };
+		84C36FD79B79BBFDF36B93B1 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A98F2911EB55A26B74557 /* ParticleSystem.swift */; };
+		86986CD4C0D219F89F241195 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FD5267F471DC7F8222A192 /* MetalKit.framework */; };
+		89B0BADC5040F7713F0937F7 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0869B63402D1BC012B49C2C9 /* Metal.framework */; };
+		8BF89528F7CF673E77DE8F96 /* ShotResourcePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE86D9FDD761861FF6AB24EE /* ShotResourcePolicy.swift */; };
+		8E15A6D4482B53F994BECE17 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0869B63402D1BC012B49C2C9 /* Metal.framework */; };
+		8EC7642DC0794D23CB121560 /* ConfigSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C51F80FDB671091BA3273 /* ConfigSheet.swift */; };
+		8F2D9D54A9B40236ED4F3BCA /* FairSubmitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFA17325619A89AF53B01BE /* FairSubmitCoordinator.swift */; };
+		9131A11D5DD9676179CA9347 /* AdaptiveCadence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA9A69C55403B22C36CE6 /* AdaptiveCadence.swift */; };
+		91DA7097DB4438137D61F986 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA86B94BF49DEC51E027B3 /* Color.swift */; };
+		93516F0BA750F3B0DEB4FBDD /* WindModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D58F674EC3EA88D51CF9B7 /* WindModelTests.swift */; };
+		93C9D71A7D8592BB6D43173D /* Bake.metal in Sources */ = {isa = PBXBuildFile; fileRef = DAA6E2B4819DA3E0128E8197 /* Bake.metal */; };
+		93E6724D4B507457BF0911AE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA86B94BF49DEC51E027B3 /* Color.swift */; };
+		95914D86B93023B8A1164A5A /* ShotPerformancePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B28D5178ABA777723B66D /* ShotPerformancePolicy.swift */; };
+		95AF9150C399DEF3FC2DC3A1 /* SpriteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6620108DABD4569D71FF34DE /* SpriteLoader.swift */; };
+		95C3FC2E3D1D0079D12744F9 /* Particles.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3959B92548B64043F380940 /* Particles.metal */; };
+		96035920A262967E8929A57C /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3BF89F5D5D56A11184903A /* SeasonsView.swift */; };
+		9758F07BFA8E5CA2B8EDE278 /* DisplayDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173A573EB77A276F73E211D /* DisplayDecision.swift */; };
+		98474A885A9A435C0BB8F930 /* ShotPerformancePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B28D5178ABA777723B66D /* ShotPerformancePolicy.swift */; };
+		98D307DD2A2B05D61A21685D /* DisplayDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173A573EB77A276F73E211D /* DisplayDecision.swift */; };
+		99D70851894E13A4C6D4F1E5 /* FairSubmitCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3161BBC28FDBD6543E9E6D0 /* FairSubmitCoordinatorTests.swift */; };
+		9BEB2F1319C6CAAFD109A50C /* seasons in Resources */ = {isa = PBXBuildFile; fileRef = 04336A41F257C12602714A26 /* seasons */; };
+		9D755D515F3AA5C60C63F90C /* PanoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E117947D1F6C10A3894944 /* PanoramaTests.swift */; };
+		9E027047F3DC24DDA50527C6 /* ViewDisplaySafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120B5E99FC4FFDAC95ED682 /* ViewDisplaySafety.swift */; };
+		A71C4A085C5213B2954CF7A9 /* SpriteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6620108DABD4569D71FF34DE /* SpriteLoader.swift */; };
+		A822FA24F1DCDC8DE954DC73 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D444C7BBD10E1A112EB7F031 /* ScreenSaver.framework */; };
+		A98679857B9F33A45BF6AA84 /* ConfigSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C51F80FDB671091BA3273 /* ConfigSheet.swift */; };
+		AB0970A612DC2D8852F1FF48 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F7460ED987559A3D140269 /* Renderer.swift */; };
+		ADB70AD4567F890A910308F3 /* DisplayPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E25CA0A65B255B4A74B00C /* DisplayPolicy.swift */; };
+		B0D667D97EF3E7BBC5C326E4 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A3F3B1BF40DFE3F44D4C9 /* Season.swift */; };
+		B6E343175C5577A5E05AFE6B /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D444C7BBD10E1A112EB7F031 /* ScreenSaver.framework */; };
+		B7848CD0C0579ADCE32216E9 /* WindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614661EF4774636720BFAE3 /* WindModel.swift */; };
+		BBF531F3AF3A1F6993D8857C /* FrameActivityPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8D0930913817DAAEE8147 /* FrameActivityPolicy.swift */; };
+		C0144E643131D50EDA142313 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69564F51EE6D4E7E5EE637DD /* QuartzCore.framework */; };
+		C1EB6AAEDF65D2D9125AE1E4 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A98F2911EB55A26B74557 /* ParticleSystem.swift */; };
+		C21C6B71793CF4664F720A67 /* RenderResourcePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F61C0688738C33C416CF3 /* RenderResourcePlan.swift */; };
+		C351CA76459072CCA8F17767 /* SeasonCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC7A5D9EB89142AC09C79 /* SeasonCatalog.swift */; };
+		C37DA2504B58CDE129674790 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C6705CA5611503B3507F1 /* Mesh.swift */; };
+		C5F302657FFA6EC607F835D2 /* PresentationColorPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68BB7E17B6A84F2562266C /* PresentationColorPolicy.swift */; };
+		C9B2DFF88648BE096BE07B44 /* ShotPerformancePolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F4A0B91FB6E4285636F752 /* ShotPerformancePolicyTests.swift */; };
+		D33A345B063E9C4CC02EFD38 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69564F51EE6D4E7E5EE637DD /* QuartzCore.framework */; };
+		D3493BA98169CB4F0DA2C666 /* DisplayPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E25CA0A65B255B4A74B00C /* DisplayPolicy.swift */; };
+		D42EABB34130FAA2E0054FB1 /* ViewDisplaySafetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3BA1D33CF3C9BBD7844BD /* ViewDisplaySafetyTests.swift */; };
+		D50221C76CD093E625C77843 /* DisplayDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173A573EB77A276F73E211D /* DisplayDecision.swift */; };
+		D64D0029084B116BB1BE6F21 /* QualityTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1ADA517FDC76D9F45FBDD2 /* QualityTier.swift */; };
+		D6699294CEC7CC6614C19019 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C7465A1D92EA73C40332A8 /* main.swift */; };
+		D680B161BA77D88D5BC866A9 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 9D913B2229D9B8A00B028C5D /* sprites */; };
+		D8EC0FA5D5AFD0BCD9C60EC1 /* PresentationColorPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68BB7E17B6A84F2562266C /* PresentationColorPolicy.swift */; };
+		D91833D306FB33A4D27263FC /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007D53174AD5B3A359631BDA /* ServiceManagement.framework */; };
+		D93F408FA9F3C9C7B5989254 /* FrameActivityPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8D0930913817DAAEE8147 /* FrameActivityPolicy.swift */; };
+		D971C85030387D1514B496C5 /* RenderResourcePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F61C0688738C33C416CF3 /* RenderResourcePlan.swift */; };
+		DA6D0CF1823CAD579365E3CF /* Common.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFDD1C470918523F1A4423 /* Common.metal */; };
+		DB8D52DAEFB7C5A62FC8410E /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A3F3B1BF40DFE3F44D4C9 /* Season.swift */; };
+		DC380ECDE576923B2FB02E60 /* Bake.metal in Sources */ = {isa = PBXBuildFile; fileRef = DAA6E2B4819DA3E0128E8197 /* Bake.metal */; };
+		DD1103C3BA101C6F4F16788B /* AdaptiveCadence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA9A69C55403B22C36CE6 /* AdaptiveCadence.swift */; };
+		DD160113A7D09FFC277BF489 /* Common.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFDD1C470918523F1A4423 /* Common.metal */; };
+		DD1AA884A7D70CDF5DDF1938 /* RenderResourcePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F61C0688738C33C416CF3 /* RenderResourcePlan.swift */; };
+		DE714CFDAE044998FBF44FA8 /* AdaptiveCadence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA9A69C55403B22C36CE6 /* AdaptiveCadence.swift */; };
+		DF85648CC3689F450A724E77 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FD5267F471DC7F8222A192 /* MetalKit.framework */; };
+		E063AB3D89A591E2BA7CE078 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69564F51EE6D4E7E5EE637DD /* QuartzCore.framework */; };
+		E12A1B6AAEA5950AA40E52F5 /* Governor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7CB04794E975DB8385992D /* Governor.swift */; };
+		E22DDCEFA278164B9B1DEBF5 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 9D913B2229D9B8A00B028C5D /* sprites */; };
+		E58862101FF631EA9D3542CF /* GovernorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B554426B0E1F606C3B6A810 /* GovernorTests.swift */; };
+		E8E3CA7F9B957996DABDE49E /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A3F3B1BF40DFE3F44D4C9 /* Season.swift */; };
+		EA906CAFC1A283229B622A85 /* FrameActivityPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D8D0930913817DAAEE8147 /* FrameActivityPolicy.swift */; };
+		EB2389BB51F04E518B915A50 /* FairSubmitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFA17325619A89AF53B01BE /* FairSubmitCoordinator.swift */; };
+		EC499BD2CB56A9FB6B96B72E /* Common.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFDD1C470918523F1A4423 /* Common.metal */; };
+		ECB9CB2466F8BEF32B25EB5C /* AdaptiveCadence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA9A69C55403B22C36CE6 /* AdaptiveCadence.swift */; };
+		ECC43907640F2068673378EB /* Panorama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB7A0F316AA91E58F54704 /* Panorama.swift */; };
+		ECD0DC5AB0A30C23CB2E9EF7 /* ConfigSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C51F80FDB671091BA3273 /* ConfigSheet.swift */; };
+		EEA5C930608E8BF9980CFE39 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA86B94BF49DEC51E027B3 /* Color.swift */; };
+		EF1D726993D07FF1AB090826 /* WindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614661EF4774636720BFAE3 /* WindModel.swift */; };
+		F0636B8E19F2110C7C9CB6A6 /* Post.metal in Sources */ = {isa = PBXBuildFile; fileRef = 011F314B36486EDAE68BFBAC /* Post.metal */; };
+		F09C17C9A3F25DEEF582E3E4 /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BC0250248BD90B85992343 /* SeasonTests.swift */; };
+		F1D3F7F0015B3BDC0672CB47 /* FairSubmitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFA17325619A89AF53B01BE /* FairSubmitCoordinator.swift */; };
+		F47C3A82AB42AA4236936166 /* DisplayPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E25CA0A65B255B4A74B00C /* DisplayPolicy.swift */; };
+		F5A6FF507697A817AE1755B1 /* Bake.metal in Sources */ = {isa = PBXBuildFile; fileRef = DAA6E2B4819DA3E0128E8197 /* Bake.metal */; };
+		F774DE690926EC50B705A5E6 /* Panorama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CB7A0F316AA91E58F54704 /* Panorama.swift */; };
+		F8A0AD852D674133456C7B59 /* seasons in Resources */ = {isa = PBXBuildFile; fileRef = 04336A41F257C12602714A26 /* seasons */; };
+		FA8B8037AC843B71DD2FD647 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A3F3B1BF40DFE3F44D4C9 /* Season.swift */; };
+		FB03FEF713E3D1003B0BEF96 /* SeasonCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BCC7A5D9EB89142AC09C79 /* SeasonCatalog.swift */; };
+		FB0F166956FFEB00CE7A6B64 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0869B63402D1BC012B49C2C9 /* Metal.framework */; };
+		FCCFF3203CEBBE66DCAD6EE8 /* ShotPerformancePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B28D5178ABA777723B66D /* ShotPerformancePolicy.swift */; };
+		FF9DEF2E03C3ACCEDB7F7C35 /* QualityTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1ADA517FDC76D9F45FBDD2 /* QualityTier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		007D53174AD5B3A359631BDA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		011F314B36486EDAE68BFBAC /* Post.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Post.metal; sourceTree = "<group>"; };
+		04336A41F257C12602714A26 /* seasons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = seasons; path = Resources/seasons; sourceTree = SOURCE_ROOT; };
+		0869B63402D1BC012B49C2C9 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		097F61C0688738C33C416CF3 /* RenderResourcePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderResourcePlan.swift; sourceTree = "<group>"; };
+		0A4C51F80FDB671091BA3273 /* ConfigSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigSheet.swift; sourceTree = "<group>"; };
+		0B22D14CFD51BC934D42603E /* UltraLiteQualityPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltraLiteQualityPolicyTests.swift; sourceTree = "<group>"; };
+		0B2B28D5178ABA777723B66D /* ShotPerformancePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotPerformancePolicy.swift; sourceTree = "<group>"; };
+		1197E49B4AD0A7C1AEA27EEF /* ShotResourcePolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotResourcePolicyTests.swift; sourceTree = "<group>"; };
+		14810FD288E47B2008749808 /* FrameActivityPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameActivityPolicyTests.swift; sourceTree = "<group>"; };
+		23D8D0930913817DAAEE8147 /* FrameActivityPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameActivityPolicy.swift; sourceTree = "<group>"; };
+		25C4131902CA1C59ABD80FFD /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		25C7465A1D92EA73C40332A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		29E117947D1F6C10A3894944 /* PanoramaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaTests.swift; sourceTree = "<group>"; };
+		2C3BF89F5D5D56A11184903A /* SeasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsView.swift; sourceTree = "<group>"; };
+		32F4A0B91FB6E4285636F752 /* ShotPerformancePolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotPerformancePolicyTests.swift; sourceTree = "<group>"; };
+		3DC454EF086CFBC62753C76F /* SeasonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BC0250248BD90B85992343 /* SeasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
+		4DD1EE3F16F878514F1D9A54 /* PresentationColorPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationColorPolicyTests.swift; sourceTree = "<group>"; };
+		4F7CB04794E975DB8385992D /* Governor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Governor.swift; sourceTree = "<group>"; };
+		5AEF2B0E4DF9D5C0A288BAA2 /* AdaptiveCadenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveCadenceTests.swift; sourceTree = "<group>"; };
+		5FFA17325619A89AF53B01BE /* FairSubmitCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairSubmitCoordinator.swift; sourceTree = "<group>"; };
+		6173A573EB77A276F73E211D /* DisplayDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDecision.swift; sourceTree = "<group>"; };
+		650D71FF868EEB207E05A5EB /* Wind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wind.h; sourceTree = "<group>"; };
+		6620108DABD4569D71FF34DE /* SpriteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteLoader.swift; sourceTree = "<group>"; };
+		69564F51EE6D4E7E5EE637DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6CFFDD1C470918523F1A4423 /* Common.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Common.metal; sourceTree = "<group>"; };
+		75ACBF22972840D4C248B597 /* SeasonsPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasonsPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CB7A0F316AA91E58F54704 /* Panorama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panorama.swift; sourceTree = "<group>"; };
+		770A3F3B1BF40DFE3F44D4C9 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		7795C75511805BF24B2A332C /* ShaderCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderCommon.h; sourceTree = "<group>"; };
+		7B554426B0E1F606C3B6A810 /* GovernorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovernorTests.swift; sourceTree = "<group>"; };
+		7B80425114DB68506C95D3BE /* Seasons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Seasons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8120B5E99FC4FFDAC95ED682 /* ViewDisplaySafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDisplaySafety.swift; sourceTree = "<group>"; };
+		8B1ADA517FDC76D9F45FBDD2 /* QualityTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTier.swift; sourceTree = "<group>"; };
+		8ECBDE4EFE3A2DDFEEE3626E /* DisplayPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPlanTests.swift; sourceTree = "<group>"; };
+		91E9EBA9343C1F89F6521DAF /* SeasonsShot */ = {isa = PBXFileReference; includeInIndex = 0; path = SeasonsShot; sourceTree = BUILT_PRODUCTS_DIR; };
+		95575D6F800CCF67E66C43AF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9D913B2229D9B8A00B028C5D /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprites; path = Resources/sprites; sourceTree = SOURCE_ROOT; };
+		A0BA86B94BF49DEC51E027B3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A421C798598821BFD592CD41 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A452CC218678A8569E48FD24 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		A4AD1F5DCA2B65C5B8B4131F /* SeasonCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonCatalogTests.swift; sourceTree = "<group>"; };
+		A4D58F674EC3EA88D51CF9B7 /* WindModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindModelTests.swift; sourceTree = "<group>"; };
+		A7E3BA1D33CF3C9BBD7844BD /* ViewDisplaySafetyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDisplaySafetyTests.swift; sourceTree = "<group>"; };
+		AE86D9FDD761861FF6AB24EE /* ShotResourcePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotResourcePolicy.swift; sourceTree = "<group>"; };
+		B0E25CA0A65B255B4A74B00C /* DisplayPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPolicy.swift; sourceTree = "<group>"; };
+		C7BCC7A5D9EB89142AC09C79 /* SeasonCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonCatalog.swift; sourceTree = "<group>"; };
+		CF1A98F2911EB55A26B74557 /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
+		D3161BBC28FDBD6543E9E6D0 /* FairSubmitCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairSubmitCoordinatorTests.swift; sourceTree = "<group>"; };
+		D3959B92548B64043F380940 /* Particles.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Particles.metal; sourceTree = "<group>"; };
+		D444C7BBD10E1A112EB7F031 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		DA58F45E39D451827C7A6AE5 /* RenderResourcePlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderResourcePlanTests.swift; sourceTree = "<group>"; };
+		DAA6E2B4819DA3E0128E8197 /* Bake.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Bake.metal; sourceTree = "<group>"; };
+		E591C1A9CDB39A8514A97C54 /* ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		E614661EF4774636720BFAE3 /* WindModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindModel.swift; sourceTree = "<group>"; };
+		E7ADF9CBBD146BA357A1CE8E /* SeasonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeasonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED68BB7E17B6A84F2562266C /* PresentationColorPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationColorPolicy.swift; sourceTree = "<group>"; };
+		F8FD5267F471DC7F8222A192 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		F99C6705CA5611503B3507F1 /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		F9EDA9A69C55403B22C36CE6 /* AdaptiveCadence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveCadence.swift; sourceTree = "<group>"; };
+		F9F7460ED987559A3D140269 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26074612C19A7F7BBD357C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0251BB86D903E0C0583276C0 /* ScreenSaver.framework in Frameworks */,
+				81445FCA7BD9D078B570E129 /* Metal.framework in Frameworks */,
+				DF85648CC3689F450A724E77 /* MetalKit.framework in Frameworks */,
+				D33A345B063E9C4CC02EFD38 /* QuartzCore.framework in Frameworks */,
+				D91833D306FB33A4D27263FC /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1531F10A022096B647F275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E343175C5577A5E05AFE6B /* ScreenSaver.framework in Frameworks */,
+				8E15A6D4482B53F994BECE17 /* Metal.framework in Frameworks */,
+				1B84052FE9CF73B68C193CC8 /* MetalKit.framework in Frameworks */,
+				212676D90AF9258ECFD236F0 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72E6322363F5B8774392F79E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A822FA24F1DCDC8DE954DC73 /* ScreenSaver.framework in Frameworks */,
+				89B0BADC5040F7713F0937F7 /* Metal.framework in Frameworks */,
+				4A44D870EDA10563FE0DA86E /* MetalKit.framework in Frameworks */,
+				E063AB3D89A591E2BA7CE078 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86B1AF19B4D554793E32B3E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCD514A1276F5DF93D8B3A /* ScreenSaver.framework in Frameworks */,
+				FB0F166956FFEB00CE7A6B64 /* Metal.framework in Frameworks */,
+				86986CD4C0D219F89F241195 /* MetalKit.framework in Frameworks */,
+				C0144E643131D50EDA142313 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EADAF1ED544A93DD5B6EE2D /* shot */ = {
+			isa = PBXGroup;
+			children = (
+				A421C798598821BFD592CD41 /* main.swift */,
+			);
+			path = shot;
+			sourceTree = "<group>";
+		};
+		6BD104EE5A36724A5177FD52 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEE155CE2EF0244DE3A9AF /* app */,
+				C849A1D4098C54BFE7AB0BB5 /* preview */,
+				1EADAF1ED544A93DD5B6EE2D /* shot */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		7F3A79D4E1BA52658FC2BB54 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6E2B4819DA3E0128E8197 /* Bake.metal */,
+				6CFFDD1C470918523F1A4423 /* Common.metal */,
+				D3959B92548B64043F380940 /* Particles.metal */,
+				011F314B36486EDAE68BFBAC /* Post.metal */,
+				7795C75511805BF24B2A332C /* ShaderCommon.h */,
+				A452CC218678A8569E48FD24 /* ShaderTypes.h */,
+				650D71FF868EEB207E05A5EB /* Wind.h */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		AFBEE155CE2EF0244DE3A9AF /* app */ = {
+			isa = PBXGroup;
+			children = (
+				95575D6F800CCF67E66C43AF /* main.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		C849A1D4098C54BFE7AB0BB5 /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				25C7465A1D92EA73C40332A8 /* main.swift */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+		CE2CC1FC220D4261FE2E707B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0869B63402D1BC012B49C2C9 /* Metal.framework */,
+				F8FD5267F471DC7F8222A192 /* MetalKit.framework */,
+				69564F51EE6D4E7E5EE637DD /* QuartzCore.framework */,
+				D444C7BBD10E1A112EB7F031 /* ScreenSaver.framework */,
+				007D53174AD5B3A359631BDA /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4DC2E9EE63B5DA8E7AB8C8E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F9EDA9A69C55403B22C36CE6 /* AdaptiveCadence.swift */,
+				A0BA86B94BF49DEC51E027B3 /* Color.swift */,
+				0A4C51F80FDB671091BA3273 /* ConfigSheet.swift */,
+				25C4131902CA1C59ABD80FFD /* Defaults.swift */,
+				6173A573EB77A276F73E211D /* DisplayDecision.swift */,
+				B0E25CA0A65B255B4A74B00C /* DisplayPolicy.swift */,
+				5FFA17325619A89AF53B01BE /* FairSubmitCoordinator.swift */,
+				23D8D0930913817DAAEE8147 /* FrameActivityPolicy.swift */,
+				4F7CB04794E975DB8385992D /* Governor.swift */,
+				F99C6705CA5611503B3507F1 /* Mesh.swift */,
+				75CB7A0F316AA91E58F54704 /* Panorama.swift */,
+				CF1A98F2911EB55A26B74557 /* ParticleSystem.swift */,
+				ED68BB7E17B6A84F2562266C /* PresentationColorPolicy.swift */,
+				8B1ADA517FDC76D9F45FBDD2 /* QualityTier.swift */,
+				F9F7460ED987559A3D140269 /* Renderer.swift */,
+				097F61C0688738C33C416CF3 /* RenderResourcePlan.swift */,
+				770A3F3B1BF40DFE3F44D4C9 /* Season.swift */,
+				C7BCC7A5D9EB89142AC09C79 /* SeasonCatalog.swift */,
+				2C3BF89F5D5D56A11184903A /* SeasonsView.swift */,
+				0B2B28D5178ABA777723B66D /* ShotPerformancePolicy.swift */,
+				AE86D9FDD761861FF6AB24EE /* ShotResourcePolicy.swift */,
+				6620108DABD4569D71FF34DE /* SpriteLoader.swift */,
+				8120B5E99FC4FFDAC95ED682 /* ViewDisplaySafety.swift */,
+				E614661EF4774636720BFAE3 /* WindModel.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E9ED8ABF6B620A28CF307253 /* SeasonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AEF2B0E4DF9D5C0A288BAA2 /* AdaptiveCadenceTests.swift */,
+				E591C1A9CDB39A8514A97C54 /* ColorTests.swift */,
+				8ECBDE4EFE3A2DDFEEE3626E /* DisplayPlanTests.swift */,
+				D3161BBC28FDBD6543E9E6D0 /* FairSubmitCoordinatorTests.swift */,
+				14810FD288E47B2008749808 /* FrameActivityPolicyTests.swift */,
+				7B554426B0E1F606C3B6A810 /* GovernorTests.swift */,
+				29E117947D1F6C10A3894944 /* PanoramaTests.swift */,
+				4DD1EE3F16F878514F1D9A54 /* PresentationColorPolicyTests.swift */,
+				DA58F45E39D451827C7A6AE5 /* RenderResourcePlanTests.swift */,
+				A4AD1F5DCA2B65C5B8B4131F /* SeasonCatalogTests.swift */,
+				49BC0250248BD90B85992343 /* SeasonTests.swift */,
+				32F4A0B91FB6E4285636F752 /* ShotPerformancePolicyTests.swift */,
+				1197E49B4AD0A7C1AEA27EEF /* ShotResourcePolicyTests.swift */,
+				0B22D14CFD51BC934D42603E /* UltraLiteQualityPolicyTests.swift */,
+				A7E3BA1D33CF3C9BBD7844BD /* ViewDisplaySafetyTests.swift */,
+				A4D58F674EC3EA88D51CF9B7 /* WindModelTests.swift */,
+			);
+			path = SeasonsTests;
+			sourceTree = "<group>";
+		};
+		EDD7B4D6748682D69C936D75 = {
+			isa = PBXGroup;
+			children = (
+				FCCB54492629D2563A02956B /* Resources */,
+				E9ED8ABF6B620A28CF307253 /* SeasonsTests */,
+				7F3A79D4E1BA52658FC2BB54 /* Shaders */,
+				E4DC2E9EE63B5DA8E7AB8C8E /* Sources */,
+				6BD104EE5A36724A5177FD52 /* tools */,
+				CE2CC1FC220D4261FE2E707B /* Frameworks */,
+				F4029772F3F2E089356043B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4029772F3F2E089356043B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B80425114DB68506C95D3BE /* Seasons.bundle */,
+				3DC454EF086CFBC62753C76F /* SeasonsApp.app */,
+				75ACBF22972840D4C248B597 /* SeasonsPreview.app */,
+				91E9EBA9343C1F89F6521DAF /* SeasonsShot */,
+				E7ADF9CBBD146BA357A1CE8E /* SeasonsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCB54492629D2563A02956B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04336A41F257C12602714A26 /* seasons */,
+				9D913B2229D9B8A00B028C5D /* sprites */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B401C61E3EE295B6E6C628 /* SeasonsShot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D77826647CA1DFF21E09D4C /* Build configuration list for PBXNativeTarget "SeasonsShot" */;
+			buildPhases = (
+				4B4A968F8A1AB51001B8A835 /* Sources */,
+				86B1AF19B4D554793E32B3E0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeasonsShot;
+			packageProductDependencies = (
+			);
+			productName = SeasonsShot;
+			productReference = 91E9EBA9343C1F89F6521DAF /* SeasonsShot */;
+			productType = "com.apple.product-type.tool";
+		};
+		29AF1D3406B33B43CC277142 /* SeasonsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 340B16ED1B77C3BB9E4B9C46 /* Build configuration list for PBXNativeTarget "SeasonsApp" */;
+			buildPhases = (
+				DCE7AA78FC7F6C6F553BEF34 /* Sources */,
+				A1039A14791CD7501E421E4D /* Resources */,
+				26074612C19A7F7BBD357C77 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeasonsApp;
+			packageProductDependencies = (
+			);
+			productName = SeasonsApp;
+			productReference = 3DC454EF086CFBC62753C76F /* SeasonsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E202D5A8ED3C7256D696BB1 /* Seasons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 142C20C6CDE489AD42EE2970 /* Build configuration list for PBXNativeTarget "Seasons" */;
+			buildPhases = (
+				71B7CFBC7617AB0124C38A72 /* Sources */,
+				8624BB9560726667CA942B12 /* Resources */,
+				72E6322363F5B8774392F79E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Seasons;
+			packageProductDependencies = (
+			);
+			productName = Seasons;
+			productReference = 7B80425114DB68506C95D3BE /* Seasons.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5D4809D1951306CF3B3445F0 /* SeasonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59A681F0B8B26D3C253D6E6F /* Build configuration list for PBXNativeTarget "SeasonsTests" */;
+			buildPhases = (
+				AE7FB514225F316272955D40 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeasonsTests;
+			packageProductDependencies = (
+			);
+			productName = SeasonsTests;
+			productReference = E7ADF9CBBD146BA357A1CE8E /* SeasonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8042AD9C3384EC2AEDBAB4B /* SeasonsPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF80FA9382BD5B8F8EB2042 /* Build configuration list for PBXNativeTarget "SeasonsPreview" */;
+			buildPhases = (
+				FE085C70843E25C4DF8CBF51 /* Sources */,
+				0862293BE5216BA677F3EEAC /* Resources */,
+				6E1531F10A022096B647F275 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeasonsPreview;
+			packageProductDependencies = (
+			);
+			productName = SeasonsPreview;
+			productReference = 75ACBF22972840D4C248B597 /* SeasonsPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95B31B9ED023EE48C1256168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 122EE96B891670E661B8E5B5 /* Build configuration list for PBXProject "Seasons" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EDD7B4D6748682D69C936D75;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F4029772F3F2E089356043B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E202D5A8ED3C7256D696BB1 /* Seasons */,
+				29AF1D3406B33B43CC277142 /* SeasonsApp */,
+				E8042AD9C3384EC2AEDBAB4B /* SeasonsPreview */,
+				13B401C61E3EE295B6E6C628 /* SeasonsShot */,
+				5D4809D1951306CF3B3445F0 /* SeasonsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0862293BE5216BA677F3EEAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B38994940CFE81CDC11A4AA /* seasons in Resources */,
+				674026AD392866BDB8E801D1 /* sprites in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8624BB9560726667CA942B12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A0AD852D674133456C7B59 /* seasons in Resources */,
+				E22DDCEFA278164B9B1DEBF5 /* sprites in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1039A14791CD7501E421E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BEB2F1319C6CAAFD109A50C /* seasons in Resources */,
+				D680B161BA77D88D5BC866A9 /* sprites in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B4A968F8A1AB51001B8A835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1103C3BA101C6F4F16788B /* AdaptiveCadence.swift in Sources */,
+				18688B19EBD1B502EC300176 /* Bake.metal in Sources */,
+				93E6724D4B507457BF0911AE /* Color.swift in Sources */,
+				DA6D0CF1823CAD579365E3CF /* Common.metal in Sources */,
+				8EC7642DC0794D23CB121560 /* ConfigSheet.swift in Sources */,
+				81565D97E81F199E10B11201 /* Defaults.swift in Sources */,
+				671F80C73F73B0839CAAA37A /* DisplayDecision.swift in Sources */,
+				F47C3A82AB42AA4236936166 /* DisplayPolicy.swift in Sources */,
+				8F2D9D54A9B40236ED4F3BCA /* FairSubmitCoordinator.swift in Sources */,
+				08435895EE64F4C1DC65FF06 /* FrameActivityPolicy.swift in Sources */,
+				E12A1B6AAEA5950AA40E52F5 /* Governor.swift in Sources */,
+				2A8B13D2505AD674DB6CC2D6 /* Mesh.swift in Sources */,
+				ECC43907640F2068673378EB /* Panorama.swift in Sources */,
+				C1EB6AAEDF65D2D9125AE1E4 /* ParticleSystem.swift in Sources */,
+				95C3FC2E3D1D0079D12744F9 /* Particles.metal in Sources */,
+				82998DBBBF81C38393C38847 /* Post.metal in Sources */,
+				49E6C752D5DE8BBC545C1702 /* PresentationColorPolicy.swift in Sources */,
+				778A07BF0C8E2914A10B43EB /* QualityTier.swift in Sources */,
+				C21C6B71793CF4664F720A67 /* RenderResourcePlan.swift in Sources */,
+				AB0970A612DC2D8852F1FF48 /* Renderer.swift in Sources */,
+				B0D667D97EF3E7BBC5C326E4 /* Season.swift in Sources */,
+				42513F86888B0A1B1716AF98 /* SeasonCatalog.swift in Sources */,
+				5259F266DA1C9B83CDC9DDE2 /* SeasonsView.swift in Sources */,
+				6DCF66CD773AFF39E56CD873 /* ShotPerformancePolicy.swift in Sources */,
+				6AAE475C60CE96E3C9EC9827 /* ShotResourcePolicy.swift in Sources */,
+				95AF9150C399DEF3FC2DC3A1 /* SpriteLoader.swift in Sources */,
+				722E084B170E51688B0CEEB6 /* ViewDisplaySafety.swift in Sources */,
+				73FE688C8A2B94A856DECCFD /* WindModel.swift in Sources */,
+				601DA616B8288194965F52B5 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B7CFBC7617AB0124C38A72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB9CB2466F8BEF32B25EB5C /* AdaptiveCadence.swift in Sources */,
+				93C9D71A7D8592BB6D43173D /* Bake.metal in Sources */,
+				EEA5C930608E8BF9980CFE39 /* Color.swift in Sources */,
+				DD160113A7D09FFC277BF489 /* Common.metal in Sources */,
+				147492DFC925AE5676FA4984 /* ConfigSheet.swift in Sources */,
+				0EFB047640F31EE53C91DBF5 /* Defaults.swift in Sources */,
+				98D307DD2A2B05D61A21685D /* DisplayDecision.swift in Sources */,
+				3B2BD3E9602534442A76FD7D /* DisplayPolicy.swift in Sources */,
+				F1D3F7F0015B3BDC0672CB47 /* FairSubmitCoordinator.swift in Sources */,
+				BBF531F3AF3A1F6993D8857C /* FrameActivityPolicy.swift in Sources */,
+				039A27DB0E29637734713BA7 /* Governor.swift in Sources */,
+				782514AFEDEA1C65CCC55190 /* Mesh.swift in Sources */,
+				6BC53470585AB7EB49CA079B /* Panorama.swift in Sources */,
+				636D9D522E8BE8B09867548B /* ParticleSystem.swift in Sources */,
+				3237820D1020B8EA430200EF /* Particles.metal in Sources */,
+				F0636B8E19F2110C7C9CB6A6 /* Post.metal in Sources */,
+				6FFA4E422CD1CB1A49267581 /* PresentationColorPolicy.swift in Sources */,
+				D64D0029084B116BB1BE6F21 /* QualityTier.swift in Sources */,
+				03801421C886641DD93722DD /* RenderResourcePlan.swift in Sources */,
+				19D45CEDCFBF71D42FA0479D /* Renderer.swift in Sources */,
+				6FD5D1FB0FE4D820BA828E00 /* Season.swift in Sources */,
+				FB03FEF713E3D1003B0BEF96 /* SeasonCatalog.swift in Sources */,
+				96035920A262967E8929A57C /* SeasonsView.swift in Sources */,
+				FCCFF3203CEBBE66DCAD6EE8 /* ShotPerformancePolicy.swift in Sources */,
+				8BF89528F7CF673E77DE8F96 /* ShotResourcePolicy.swift in Sources */,
+				A71C4A085C5213B2954CF7A9 /* SpriteLoader.swift in Sources */,
+				664D2F6B6B15A0FE80CD949A /* ViewDisplaySafety.swift in Sources */,
+				B7848CD0C0579ADCE32216E9 /* WindModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7FB514225F316272955D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0661232E890F4B853F9E5746 /* AdaptiveCadence.swift in Sources */,
+				81F25DC3E16E229834164F7E /* AdaptiveCadenceTests.swift in Sources */,
+				6E1E91F3F73DCABABE54A414 /* Color.swift in Sources */,
+				514965DE5C465A66F710A2B8 /* ColorTests.swift in Sources */,
+				7BD73E66363D1672F527CD7C /* DisplayDecision.swift in Sources */,
+				1D37DB0EBE64C9465ED3ACEA /* DisplayPlanTests.swift in Sources */,
+				77CBFF81BD2CD477AD68349F /* FairSubmitCoordinator.swift in Sources */,
+				99D70851894E13A4C6D4F1E5 /* FairSubmitCoordinatorTests.swift in Sources */,
+				152FF7D2B8591082A57E73CC /* FrameActivityPolicy.swift in Sources */,
+				49AF98625F9B427432D8B960 /* FrameActivityPolicyTests.swift in Sources */,
+				5DFECEF21E7A5D62DE4200F0 /* Governor.swift in Sources */,
+				E58862101FF631EA9D3542CF /* GovernorTests.swift in Sources */,
+				48E5B5D941479DFADF7BC11A /* Panorama.swift in Sources */,
+				9D755D515F3AA5C60C63F90C /* PanoramaTests.swift in Sources */,
+				D8EC0FA5D5AFD0BCD9C60EC1 /* PresentationColorPolicy.swift in Sources */,
+				5C97CBD004A0CC2743E61A19 /* PresentationColorPolicyTests.swift in Sources */,
+				3C4AEA72E34DB3B0532E136C /* QualityTier.swift in Sources */,
+				DD1AA884A7D70CDF5DDF1938 /* RenderResourcePlan.swift in Sources */,
+				839F07BC1F5A95223DD4F7D6 /* RenderResourcePlanTests.swift in Sources */,
+				DB8D52DAEFB7C5A62FC8410E /* Season.swift in Sources */,
+				7D091732A810B895A591EB86 /* SeasonCatalog.swift in Sources */,
+				8193C6AA3EF2F0A7BD1090BF /* SeasonCatalogTests.swift in Sources */,
+				F09C17C9A3F25DEEF582E3E4 /* SeasonTests.swift in Sources */,
+				95914D86B93023B8A1164A5A /* ShotPerformancePolicy.swift in Sources */,
+				C9B2DFF88648BE096BE07B44 /* ShotPerformancePolicyTests.swift in Sources */,
+				21879CB23C2C2D02CAF179B5 /* ShotResourcePolicy.swift in Sources */,
+				67BD153EA282845BCF83C8FA /* ShotResourcePolicyTests.swift in Sources */,
+				514D1CE1B173DA5B19DED1E8 /* UltraLiteQualityPolicyTests.swift in Sources */,
+				47CD0CE46FE0D04BC0A5F7F0 /* ViewDisplaySafety.swift in Sources */,
+				D42EABB34130FAA2E0054FB1 /* ViewDisplaySafetyTests.swift in Sources */,
+				248C2F7F5B603BA4E8DC590D /* WindModel.swift in Sources */,
+				93516F0BA750F3B0DEB4FBDD /* WindModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE7AA78FC7F6C6F553BEF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE714CFDAE044998FBF44FA8 /* AdaptiveCadence.swift in Sources */,
+				DC380ECDE576923B2FB02E60 /* Bake.metal in Sources */,
+				91DA7097DB4438137D61F986 /* Color.swift in Sources */,
+				EC499BD2CB56A9FB6B96B72E /* Common.metal in Sources */,
+				A98679857B9F33A45BF6AA84 /* ConfigSheet.swift in Sources */,
+				63612E90F33254F2B6CC8E44 /* Defaults.swift in Sources */,
+				9758F07BFA8E5CA2B8EDE278 /* DisplayDecision.swift in Sources */,
+				D3493BA98169CB4F0DA2C666 /* DisplayPolicy.swift in Sources */,
+				EB2389BB51F04E518B915A50 /* FairSubmitCoordinator.swift in Sources */,
+				EA906CAFC1A283229B622A85 /* FrameActivityPolicy.swift in Sources */,
+				39AF5A7CD60230FF3AB1F72B /* Governor.swift in Sources */,
+				2B807CBB482067F5336C127C /* Mesh.swift in Sources */,
+				4F712A18F60A906BDC281FB5 /* Panorama.swift in Sources */,
+				446CA782E820DE004EE59520 /* ParticleSystem.swift in Sources */,
+				417A67A3F8E858A82050AD0F /* Particles.metal in Sources */,
+				56427F41E7AE544FF68A81D2 /* Post.metal in Sources */,
+				310D89F4A27C89CA69F688E8 /* PresentationColorPolicy.swift in Sources */,
+				79D1239304C6BF4FB3D82B16 /* QualityTier.swift in Sources */,
+				D971C85030387D1514B496C5 /* RenderResourcePlan.swift in Sources */,
+				6860AFD8D23CC2EB4069D514 /* Renderer.swift in Sources */,
+				E8E3CA7F9B957996DABDE49E /* Season.swift in Sources */,
+				C351CA76459072CCA8F17767 /* SeasonCatalog.swift in Sources */,
+				2F852C41D55A48B9C1F6AE96 /* SeasonsView.swift in Sources */,
+				98474A885A9A435C0BB8F930 /* ShotPerformancePolicy.swift in Sources */,
+				0922168B838530AFA9E34331 /* ShotResourcePolicy.swift in Sources */,
+				6DE37D82BC5C18079C512B27 /* SpriteLoader.swift in Sources */,
+				9E027047F3DC24DDA50527C6 /* ViewDisplaySafety.swift in Sources */,
+				EF1D726993D07FF1AB090826 /* WindModel.swift in Sources */,
+				3E23159C68A46BEE3AB7E3B4 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE085C70843E25C4DF8CBF51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9131A11D5DD9676179CA9347 /* AdaptiveCadence.swift in Sources */,
+				F5A6FF507697A817AE1755B1 /* Bake.metal in Sources */,
+				1B54C9BDA64BC952CF1AA2D4 /* Color.swift in Sources */,
+				6C83984167C4C792C8F1F467 /* Common.metal in Sources */,
+				ECD0DC5AB0A30C23CB2E9EF7 /* ConfigSheet.swift in Sources */,
+				3BEDBE9D27F46AF44294F610 /* Defaults.swift in Sources */,
+				D50221C76CD093E625C77843 /* DisplayDecision.swift in Sources */,
+				ADB70AD4567F890A910308F3 /* DisplayPolicy.swift in Sources */,
+				814837E56266A1A8A2FECA29 /* FairSubmitCoordinator.swift in Sources */,
+				D93F408FA9F3C9C7B5989254 /* FrameActivityPolicy.swift in Sources */,
+				7C8153915DB06F331BB9AF04 /* Governor.swift in Sources */,
+				C37DA2504B58CDE129674790 /* Mesh.swift in Sources */,
+				F774DE690926EC50B705A5E6 /* Panorama.swift in Sources */,
+				84C36FD79B79BBFDF36B93B1 /* ParticleSystem.swift in Sources */,
+				505BE9705E07D4EAA615028C /* Particles.metal in Sources */,
+				2AC551399C3A565B36520255 /* Post.metal in Sources */,
+				C5F302657FFA6EC607F835D2 /* PresentationColorPolicy.swift in Sources */,
+				FF9DEF2E03C3ACCEDB7F7C35 /* QualityTier.swift in Sources */,
+				782ECC3C866B41D75D08AA94 /* RenderResourcePlan.swift in Sources */,
+				49B381478A21E6D8EE4CEE82 /* Renderer.swift in Sources */,
+				FA8B8037AC843B71DD2FD647 /* Season.swift in Sources */,
+				58DA6B4220E7D1798935A621 /* SeasonCatalog.swift in Sources */,
+				553926007627049D7ACA0EDB /* SeasonsView.swift in Sources */,
+				658B25EA5DF857127E336C43 /* ShotPerformancePolicy.swift in Sources */,
+				52CE8C8D043ECBCA18A8F3F8 /* ShotResourcePolicy.swift in Sources */,
+				48321F08609921CC70D51ECF /* SpriteLoader.swift in Sources */,
+				41ACD0FED8E3F3824146A797 /* ViewDisplaySafety.swift in Sources */,
+				5D5101080EAE84542AA59933 /* WindModel.swift in Sources */,
+				D6699294CEC7CC6614C19019 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04F528AF5E1A62521A4B5616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsShot;
+				PRODUCT_NAME = "seasons-shot";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Debug;
+		};
+		115A41A0CBC099ECC165D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsApp;
+				PRODUCT_MODULE_NAME = Seasons;
+				PRODUCT_NAME = Seasons;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Release;
+		};
+		116454824A0247F0E8554C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+			};
+			name = Debug;
+		};
+		477EAAAB7A090DB1047CD605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Seasons-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.Seasons;
+				PRODUCT_MODULE_NAME = Seasons;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		4EFB593D7DC7E3D6B4781DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsShot;
+				PRODUCT_NAME = "seasons-shot";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Release;
+		};
+		617D5800A8711D51406EB0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Seasons-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.Seasons;
+				PRODUCT_MODULE_NAME = Seasons;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		9E77A3649A743012664738A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsTests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Debug;
+		};
+		C63865C3A81426E2F62643F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsTests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Release;
+		};
+		CF6C02B361E883FCC893EC3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsPreview;
+				PRODUCT_MODULE_NAME = Seasons;
+				PRODUCT_NAME = "Seasons Preview";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Debug;
+		};
+		DAF288B80508FAF835766227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsApp;
+				PRODUCT_MODULE_NAME = Seasons;
+				PRODUCT_NAME = Seasons;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Debug;
+		};
+		DFA6DF68E739442D8CE1EA81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+			};
+			name = Release;
+		};
+		E5F016F1EE26D4890E7985AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsPreview;
+				PRODUCT_MODULE_NAME = Seasons;
+				PRODUCT_NAME = "Seasons Preview";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Shaders/ShaderTypes.h;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D77826647CA1DFF21E09D4C /* Build configuration list for PBXNativeTarget "SeasonsShot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F528AF5E1A62521A4B5616 /* Debug */,
+				4EFB593D7DC7E3D6B4781DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		122EE96B891670E661B8E5B5 /* Build configuration list for PBXProject "Seasons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116454824A0247F0E8554C0C /* Debug */,
+				DFA6DF68E739442D8CE1EA81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		142C20C6CDE489AD42EE2970 /* Build configuration list for PBXNativeTarget "Seasons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477EAAAB7A090DB1047CD605 /* Debug */,
+				617D5800A8711D51406EB0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		340B16ED1B77C3BB9E4B9C46 /* Build configuration list for PBXNativeTarget "SeasonsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF288B80508FAF835766227 /* Debug */,
+				115A41A0CBC099ECC165D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		59A681F0B8B26D3C253D6E6F /* Build configuration list for PBXNativeTarget "SeasonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E77A3649A743012664738A7 /* Debug */,
+				C63865C3A81426E2F62643F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ABF80FA9382BD5B8F8EB2042 /* Build configuration list for PBXNativeTarget "SeasonsPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6C02B361E883FCC893EC3E /* Debug */,
+				E5F016F1EE26D4890E7985AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95B31B9ED023EE48C1256168 /* Project object */;
+}

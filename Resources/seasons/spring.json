@@ -1,0 +1,59 @@
+{
+  "name": "spring",
+  "glyphType": "image",
+  "spriteSet": "petals",
+  "spriteCount": 10,
+  "count": 240,
+  "sizeMin": 20,
+  "sizeMax": 82,
+  "vyMin": 10,
+  "vyMax": 25,
+  "vxMin": 0,
+  "vxMax": 0,
+  "swayAmp": 28,
+  "swayPeriodMin": 5,
+  "swayPeriodMax": 9,
+  "rotate": true,
+  "rotateSpeed": 0.4,
+  "tumble": true,
+  "tumbleSpeed": 0.6,
+  "glow": false,
+  "pulse": false,
+  "spriteOpacity": 1.0,
+  "color": {
+    "L": 0.92,
+    "C": 0.06,
+    "H": 25,
+    "alpha": 0.6
+  },
+  "tint": {
+    "L": 0.25,
+    "C": 0.04,
+    "H": 25,
+    "alpha": 0.15
+  },
+  "depthMin": 0.6,
+  "depthMax": 1.0,
+  "bloomThreshold": 1.0,
+  "bloomIntensity": 0.35,
+  "dofStrength": 0.3,
+  "edrHeadroom": 1.0,
+  "windMax": 45,
+  "motionModel": "petal",
+  "aero": {
+    "flutterAmp": 0.4,
+    "flutterFreq": 0.5,
+    "gyroRadius": 26
+  },
+  "hueJitterDeg": 6,
+  "heroSpecies": {
+    "spriteSet": "blossom",
+    "spriteCount": 3,
+    "weight": 0,
+    "sizeMin": 54,
+    "sizeMax": 85,
+    "material": {
+      "sssStrength": 1.3
+    }
+  }
+}

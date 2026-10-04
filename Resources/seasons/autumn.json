@@ -1,0 +1,89 @@
+{
+  "name": "autumn",
+  "glyphType": "image",
+  "spriteSet": "leaves",
+  "spriteCount": 8,
+  "count": 240,
+  "sizeMin": 28,
+  "sizeMax": 88,
+  "vyMin": 25,
+  "vyMax": 55,
+  "vxMin": 0,
+  "vxMax": 0,
+  "swayAmp": 32,
+  "swayPeriodMin": 4,
+  "swayPeriodMax": 8,
+  "rotate": true,
+  "rotateSpeed": 0.7,
+  "tumble": true,
+  "tumbleSpeed": 0.9,
+  "glow": false,
+  "pulse": false,
+  "spriteOpacity": 1.0,
+  "color": {
+    "L": 0.72,
+    "C": 0.14,
+    "H": 50,
+    "alpha": 0.7
+  },
+  "tint": {
+    "L": 0.25,
+    "C": 0.04,
+    "H": 50,
+    "alpha": 0.15
+  },
+  "depthMin": 0.6,
+  "depthMax": 1.0,
+  "bloomThreshold": 1.0,
+  "bloomIntensity": 0.4,
+  "dofStrength": 0.3,
+  "edrHeadroom": 1.0,
+  "windMax": 90,
+  "wind": {
+    "base": 25,
+    "turbulence": 80,
+    "fieldScale": 0.0015,
+    "evolve": 0.12,
+    "gustEvery": [
+      20,
+      45
+    ],
+    "gustStrength": 160,
+    "gustWidth": 800,
+    "relaxTau": 0.8
+  },
+  "motionModel": "leaf",
+  "aero": {
+    "flutterAmp": 0.55,
+    "flutterFreq": 0.55,
+    "tumbleChance": 0.18
+  },
+  "hueJitterDeg": 14,
+  "species": [
+    {
+      "spriteSet": "maple",
+      "spriteCount": 6,
+      "weight": 0.4
+    },
+    {
+      "spriteSet": "oak",
+      "spriteCount": 6,
+      "weight": 0.3
+    },
+    {
+      "spriteSet": "birch",
+      "spriteCount": 4,
+      "weight": 0.18,
+      "hueJitterDeg": 8
+    },
+    {
+      "spriteSet": "samara",
+      "spriteCount": 4,
+      "weight": 0.12,
+      "motionModel": "samara",
+      "sizeMin": 22,
+      "sizeMax": 46,
+      "hueJitterDeg": 5
+    }
+  ]
+}

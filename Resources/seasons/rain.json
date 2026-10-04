@@ -1,0 +1,43 @@
+{
+  "name": "rain",
+  "glyphType": "streak",
+  "spriteSet": null,
+  "spriteCount": 0,
+  "count": 600,
+  "sizeMin": 2.0,
+  "sizeMax": 5.0,
+  "vyMin": 900,
+  "vyMax": 1500,
+  "vxMin": 0,
+  "vxMax": 0,
+  "swayAmp": 0,
+  "swayPeriodMin": 6,
+  "swayPeriodMax": 10,
+  "rotate": false,
+  "rotateSpeed": 0.0,
+  "tumble": false,
+  "tumbleSpeed": 0.0,
+  "glow": false,
+  "pulse": false,
+  "spriteOpacity": 0.5,
+  "color": {
+    "L": 0.85,
+    "C": 0.03,
+    "H": 240,
+    "alpha": 0.6
+  },
+  "tint": {
+    "L": 0.25,
+    "C": 0.03,
+    "H": 240,
+    "alpha": 0.15
+  },
+  "depthMin": 0.6,
+  "depthMax": 1.0,
+  "bloomThreshold": 1.2,
+  "bloomIntensity": 0.2,
+  "dofStrength": 0.25,
+  "edrHeadroom": 1.0,
+  "windMax": 120,
+  "motionModel": "rain"
+}

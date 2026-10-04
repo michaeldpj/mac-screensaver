@@ -1,0 +1,47 @@
+{
+  "name": "stars",
+  "glyphType": "glow",
+  "motionModel": "generic",
+  "spriteCount": 0,
+  "count": 240,
+  "sizeMin": 0.8,
+  "sizeMax": 2.2,
+  "vyMin": 3,
+  "vyMax": 7,
+  "vxMin": 8,
+  "vxMax": 14,
+  "swayAmp": 0,
+  "swayPeriodMin": 3,
+  "swayPeriodMax": 6,
+  "rotate": false,
+  "rotateSpeed": 0,
+  "tumble": false,
+  "tumbleSpeed": 0,
+  "glow": true,
+  "pulse": true,
+  "spriteOpacity": 1.0,
+  "color": {
+    "L": 0.92,
+    "C": 0.03,
+    "H": 260,
+    "alpha": 0.8
+  },
+  "tint": {
+    "L": 0.2,
+    "C": 0.02,
+    "H": 260,
+    "alpha": 0.1
+  },
+  "depthMin": 0.5,
+  "depthMax": 1.0,
+  "bloomThreshold": 0.75,
+  "bloomIntensity": 0.45,
+  "dofStrength": 0.1,
+  "edrHeadroom": 1.2,
+  "wind": {
+    "base": 0,
+    "turbulence": 2,
+    "gustStrength": 0,
+    "relaxTau": 0.5
+  }
+}

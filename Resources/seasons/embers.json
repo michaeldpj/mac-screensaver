@@ -1,0 +1,52 @@
+{
+  "name": "embers",
+  "glyphType": "glow",
+  "motionModel": "generic",
+  "spriteCount": 0,
+  "count": 220,
+  "sizeMin": 1.2,
+  "sizeMax": 3.6,
+  "vyMin": -65,
+  "vyMax": -25,
+  "vxMin": -8,
+  "vxMax": 8,
+  "swayAmp": 0,
+  "swayPeriodMin": 3,
+  "swayPeriodMax": 6,
+  "rotate": false,
+  "rotateSpeed": 0,
+  "tumble": false,
+  "tumbleSpeed": 0,
+  "glow": true,
+  "pulse": true,
+  "spriteOpacity": 1.0,
+  "color": {
+    "L": 0.68,
+    "C": 0.19,
+    "H": 35,
+    "alpha": 0.75
+  },
+  "tint": {
+    "L": 0.25,
+    "C": 0.05,
+    "H": 35,
+    "alpha": 0.15
+  },
+  "depthMin": 0.6,
+  "depthMax": 1.0,
+  "bloomThreshold": 0.7,
+  "bloomIntensity": 0.5,
+  "dofStrength": 0.2,
+  "edrHeadroom": 1.25,
+  "wind": {
+    "base": 6,
+    "turbulence": 24,
+    "gustEvery": [
+      35,
+      70
+    ],
+    "gustStrength": 60,
+    "gustWidth": 900,
+    "relaxTau": 0.3
+  }
+}

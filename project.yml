@@ -1,0 +1,146 @@
+name: Seasons
+options:
+  bundleIdPrefix: me.mdpj
+  createIntermediateGroups: true
+  deploymentTarget:
+    macOS: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "5"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGNING_REQUIRED: "NO"
+    CODE_SIGNING_ALLOWED: "NO"
+targets:
+  Seasons:
+    type: bundle
+    platform: macOS
+    sources:
+      - path: Sources
+      - path: Shaders
+      - path: Resources/sprites
+        type: folder
+        buildPhase: resources
+      - path: Resources/seasons
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        WRAPPER_EXTENSION: saver
+        PRODUCT_BUNDLE_IDENTIFIER: me.mdpj.Seasons
+        PRODUCT_MODULE_NAME: Seasons
+        INFOPLIST_FILE: Seasons-Info.plist
+        SKIP_INSTALL: "YES"
+        SWIFT_OBJC_BRIDGING_HEADER: Shaders/ShaderTypes.h
+        LD_RUNPATH_SEARCH_PATHS: "@loader_path/../Frameworks"
+        ONLY_ACTIVE_ARCH: "NO"
+        ARCHS: "arm64 x86_64"
+    dependencies:
+      - sdk: ScreenSaver.framework
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: QuartzCore.framework
+  SeasonsShot:
+    type: tool
+    platform: macOS
+    sources:
+      - path: tools/shot
+      - path: Sources
+      - path: Shaders
+    settings:
+      base:
+        PRODUCT_NAME: seasons-shot
+        SWIFT_OBJC_BRIDGING_HEADER: Shaders/ShaderTypes.h
+    dependencies:
+      - sdk: ScreenSaver.framework
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: QuartzCore.framework
+  SeasonsPreview:
+    type: application
+    platform: macOS
+    sources:
+      - path: tools/preview
+      - path: Sources
+      - path: Shaders
+      - path: Resources/sprites
+        type: folder
+        buildPhase: resources
+      - path: Resources/seasons
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_NAME: "Seasons Preview"
+        PRODUCT_BUNDLE_IDENTIFIER: me.mdpj.SeasonsPreview
+        PRODUCT_MODULE_NAME: Seasons
+        GENERATE_INFOPLIST_FILE: "YES"
+        SWIFT_OBJC_BRIDGING_HEADER: Shaders/ShaderTypes.h
+        INFOPLIST_KEY_LSUIElement: "NO"
+        INFOPLIST_KEY_NSPrincipalClass: NSApplication
+    dependencies:
+      - sdk: ScreenSaver.framework
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: QuartzCore.framework
+  SeasonsApp:
+    type: application
+    platform: macOS
+    sources:
+      - path: tools/app
+      - path: Sources
+      - path: Shaders
+      - path: Resources/sprites
+        type: folder
+        buildPhase: resources
+      - path: Resources/seasons
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_NAME: "Seasons"
+        PRODUCT_BUNDLE_IDENTIFIER: me.mdpj.SeasonsApp
+        PRODUCT_MODULE_NAME: Seasons
+        GENERATE_INFOPLIST_FILE: "YES"
+        SWIFT_OBJC_BRIDGING_HEADER: Shaders/ShaderTypes.h
+        INFOPLIST_KEY_LSUIElement: "YES"
+        INFOPLIST_KEY_NSPrincipalClass: NSApplication
+    dependencies:
+      - sdk: ScreenSaver.framework
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: QuartzCore.framework
+      - sdk: ServiceManagement.framework
+  SeasonsTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: SeasonsTests
+      - path: Sources/AdaptiveCadence.swift
+      - path: Sources/Color.swift
+      - path: Sources/DisplayDecision.swift
+      - path: Sources/FairSubmitCoordinator.swift
+      - path: Sources/FrameActivityPolicy.swift
+      - path: Sources/Season.swift
+      - path: Sources/SeasonCatalog.swift
+      - path: Sources/Governor.swift
+      - path: Sources/Panorama.swift
+      - path: Sources/PresentationColorPolicy.swift
+      - path: Sources/QualityTier.swift
+      - path: Sources/RenderResourcePlan.swift
+      - path: Sources/ShotResourcePolicy.swift
+      - path: Sources/ShotPerformancePolicy.swift
+      - path: Sources/ViewDisplaySafety.swift
+      - path: Sources/WindModel.swift
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: "YES"
+        SWIFT_OBJC_BRIDGING_HEADER: Shaders/ShaderTypes.h
+schemes:
+  Seasons:
+    build:
+      targets:
+        Seasons: all
+        SeasonsTests: [test]
+    test:
+      targets:
+        - SeasonsTests

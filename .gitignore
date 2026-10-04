@@ -1,0 +1,23 @@
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+build/
+.DS_Store
+
+# fal.ai raw generation outputs are kept (committed under tools/raw) as the sprite source of record;
+# add patterns here if intermediate scratch is introduced.
+
+# Editor/merge leftovers
+*.orig
+
+# QA render artifacts and session locks
+qa/
+.claude/scheduled_tasks.lock
+
+# Full kernel panic logs contain device identifiers and the running process list; kept local only
+docs/panics/
+
+# Python
+__pycache__/

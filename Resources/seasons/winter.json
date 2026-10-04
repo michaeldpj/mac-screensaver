@@ -1,0 +1,76 @@
+{
+  "name": "winter",
+  "glyphType": "image",
+  "spriteSet": "snow",
+  "spriteCount": 8,
+  "count": 460,
+  "sizeMin": 15,
+  "sizeMax": 48,
+  "vyMin": 18,
+  "vyMax": 45,
+  "vxMin": 0,
+  "vxMax": 0,
+  "swayAmp": 14,
+  "swayPeriodMin": 6,
+  "swayPeriodMax": 10,
+  "rotate": true,
+  "rotateSpeed": 0.25,
+  "tumble": false,
+  "tumbleSpeed": 0.0,
+  "glow": false,
+  "pulse": false,
+  "spriteOpacity": 1.0,
+  "color": {
+    "L": 0.95,
+    "C": 0.0,
+    "H": 0,
+    "alpha": 0.75
+  },
+  "tint": {
+    "L": 0.25,
+    "C": 0.03,
+    "H": 230,
+    "alpha": 0.15
+  },
+  "light": {
+    "keyIntensity": 1.55,
+    "ambientIntensity": 0.62,
+    "specular": 0.4,
+    "rimIntensity": 0.55
+  },
+  "grade": {
+    "exposure": 1.4,
+    "saturation": 1.1
+  },
+  "depthMin": 0.6,
+  "depthMax": 1.0,
+  "bloomThreshold": 1.0,
+  "bloomIntensity": 0.3,
+  "dofStrength": 0.3,
+  "edrHeadroom": 1.0,
+  "windMax": 60,
+  "motionModel": "snow",
+  "aero": {
+    "flutterFreq": 0.3,
+    "microTurb": 28
+  },
+  "hueJitterDeg": 3,
+  "heroSpecies": {
+    "spriteSet": "crystal",
+    "spriteCount": 2,
+    "weight": 0,
+    "sizeMin": 48,
+    "sizeMax": 78,
+    "aero": {
+      "flutterAmp": 0.5,
+      "flutterFreq": 0.3
+    }
+  },
+  "choreo": {
+    "heroCount": 2,
+    "heroEvery": [
+      30,
+      60
+    ]
+  }
+}

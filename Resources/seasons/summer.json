@@ -1,0 +1,51 @@
+{
+  "name": "summer",
+  "glyphType": "glow",
+  "spriteSet": null,
+  "spriteCount": 0,
+  "count": 160,
+  "sizeMin": 2.5,
+  "sizeMax": 6.0,
+  "vyMin": -15,
+  "vyMax": 15,
+  "vxMin": -15,
+  "vxMax": 15,
+  "swayAmp": 18,
+  "swayPeriodMin": 3,
+  "swayPeriodMax": 6,
+  "rotate": false,
+  "rotateSpeed": 0.0,
+  "tumble": false,
+  "tumbleSpeed": 0.0,
+  "glow": true,
+  "pulse": true,
+  "spriteOpacity": 1.0,
+  "color": {
+    "L": 0.88,
+    "C": 0.16,
+    "H": 95,
+    "alpha": 0.65
+  },
+  "tint": {
+    "L": 0.25,
+    "C": 0.04,
+    "H": 95,
+    "alpha": 0.15
+  },
+  "depthMin": 0.6,
+  "depthMax": 1.0,
+  "bloomThreshold": 0.9,
+  "bloomIntensity": 0.45,
+  "dofStrength": 0.2,
+  "edrHeadroom": 1.15,
+  "windMax": 20,
+  "motionModel": "firefly",
+  "aero": {
+    "flashOn": 0.45,
+    "flashInterval": [
+      3.5,
+      6.5
+    ],
+    "attractorWeight": 0.6
+  }
+}
