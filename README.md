@@ -5,6 +5,8 @@ elevates it: real 3D lit tumbling particles, bloom, depth-of-field, and a cinema
 backdrop, per season. Auto-selects by month (winter→snow, spring→petals, summer→fireflies,
 autumn→leaves).
 
+![Winter snow, spring petals, summer fireflies, and autumn leaves rendered by Seasons](docs/images/seasons.png)
+
 **Status:** the visual engine is complete for all four seasons. The **Seasons** menu-bar app is
 the daily-driver delivery: it starts the renderer after a chosen idle interval and supports Launch
 at Login. The classic `.saver` builds and installs, but macOS 26 (Tahoe) does
