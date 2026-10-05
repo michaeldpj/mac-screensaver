@@ -3,9 +3,17 @@
 A Metal screensaver that ports the seasonal particle effect from mdpj.me to native and
 elevates it: real 3D lit tumbling particles, bloom, depth-of-field, and a cinematic graded
 backdrop, per season. Auto-selects by month (winter→snow, spring→petals, summer→fireflies,
-autumn→leaves).
+autumn→leaves), and the menu also offers Rain, Embers, and Stars.
 
 ![Winter snow, spring petals, summer fireflies, and autumn leaves rendered by Seasons](docs/images/seasons.png)
+
+## Install
+
+Download `Seasons-<version>.dmg` from the
+[latest release](https://github.com/michaeldpj/mac-screensaver/releases/latest), open it, and drag
+**Seasons** into **Applications**. The app is signed with a Developer ID and notarized by Apple, so it
+opens without a Gatekeeper warning. It runs from the menu bar (leaf icon) with no Dock icon. Requires
+macOS 26 or later on Apple silicon.
 
 **Status:** the visual engine is complete for all four seasons. The **Seasons** menu-bar app is
 the daily-driver delivery: it starts the renderer after a chosen idle interval and supports Launch
@@ -29,7 +37,7 @@ through staged tests if you want to check your own hardware first.
 
 `project.yml` is the source of truth; the `.xcodeproj` is generated (`xcodegen generate`).
 
-## Build & run
+## Build from source
 
 **Menu-bar app (recommended daily driver):**
 ```sh
@@ -42,7 +50,7 @@ codesign --force --deep --sign - "$HOME/Applications/Seasons.app"
 open "$HOME/Applications/Seasons.app"
 ```
 Use the leaf menu to choose a season, idle delay, and **Launch at Login**. To animate external
-displays, enable **External Displays — Ultra-Lite 30 FPS (Experimental)** in the same menu, which
+displays, enable **External Displays — Ultra-Lite 30 FPS** in the same menu, which
 spreads one continuous scene across every connected screen. Until it is on, externals stay black,
 including on a Mac running with the lid closed. The choice persists across launches and login. It
 applies only to the menu-bar app, so the preview app and the legacy `.saver` keep externals black.
@@ -55,7 +63,7 @@ open "build/Debug/Seasons Preview.app"            # auto season by month
 ```
 Force a specific season (Esc / click / any key quits):
 ```sh
-"build/Debug/Seasons Preview.app/Contents/MacOS/Seasons Preview" spring   # winter|spring|summer|autumn|off
+"build/Debug/Seasons Preview.app/Contents/MacOS/Seasons Preview" spring   # winter|spring|summer|autumn|rain|embers|stars|off
 ```
 
 **Headless render to PNG** — fastest way to iterate on the look. Reads season JSON straight
@@ -81,6 +89,12 @@ also fail a timed run when it records no GPU samples or its p95 GPU time reaches
 ./install.sh        # builds, signs, copies to ~/Library/Screen Savers
 ```
 
+**Release DMG** (needs a Developer ID Application certificate and a `notarytool` keychain profile;
+override with `SIGN_IDENTITY` and `NOTARY_PROFILE`):
+```sh
+./scripts/build-dmg.sh   # builds, signs, notarizes and staples build/Seasons-<version>.dmg
+```
+
 **Tests** (pure-logic units, including display safety, render-resource planning, static cadence,
 and concurrent submission spacing):
 ```sh
@@ -88,13 +102,13 @@ xcodegen generate
 xcodebuild -project Seasons.xcodeproj -scheme Seasons -destination 'platform=macOS' build test
 ```
 
-Before any live display test—especially with external monitors—follow
-[docs/SAFE-TESTING.md](docs/SAFE-TESTING.md). The default policy never animates an external:
-the built-in panel may animate while externals stay GPU-free black; clamshell/external-only setups
-stay entirely black. External animation flags remain experimental and can still trigger the
-documented AppleDCP/DCPEXT0 kernel panic.
+With Ultra-Lite off, the default policy never animates an external: the built-in panel may animate
+while externals stay GPU-free black, and clamshell or external-only setups stay entirely black.
+`SEASONS_ALL_DISPLAYS` deliberately bypasses Ultra-Lite and reproduces the full-quality path that
+caused the AppleDCP/DCPEXT0 kernel panic, so use it only for that, following
+[docs/SAFE-TESTING.md](docs/SAFE-TESTING.md).
 
-The menu-bar app's persisted **External Displays — Ultra-Lite 30 FPS (Experimental)** option and
+The menu-bar app's persisted **External Displays — Ultra-Lite 30 FPS** option and
 the deliberate `SEASONS_EXT_ULTRALITE=1` development hook both select the same bounded path. It
 clamps each external to at most 2880×1620 at native
 render scale, uses 15% of the configured particles, disables bloom, depth-of-field, and EDR, and
@@ -104,8 +118,8 @@ and returns to 30 FPS after 15 healthy seconds. With three Ultra-Lite externals,
 at 60 FPS. Two or more participating externals render camera crops of one deterministic particle world,
 so particles can cross monitor boundaries while every drawable, queue, buffer, and post graph remains
 per-display. Ultra-Lite presents sRGB-encoded BGRA8 in Display-P3 with EDR off; image sprites receive a
-conservative vivid-SDR treatment while the background stays exact black. These controls prevent
-synchronized displays from starving one another; they are not a safety guarantee. Three
+conservative vivid-SDR treatment while the background stays exact black. These controls keep
+synchronized displays from starving one another. Three
 2880×1620 drawables at 30 FPS are about 419.9 million source pixels/s, 2.25× the former 1920×1080
 envelope. The retained scene+CoC pair is about 71.2 MiB per display, or 213.6 MiB for three.
 
@@ -130,7 +144,7 @@ rebuild); the app/saver bundle the JSON, so rebuild to see changes there.
 | `depthMin`/`depthMax` | parallax/DOF depth range (0.6–1.0) |
 | `bloomThreshold` | bloom bright-pass knee |
 | `bloomIntensity`, `dofStrength`, `edrHeadroom` | bloom/DOF/glow strength (note: mood values below currently override some globals) |
-| `glyphType` | `image` (sprite mesh) or `glow` (procedural firefly) |
+| `glyphType` | `image` (sprite mesh), `glow` (procedural firefly), or `streak` (rain) |
 | `spriteSet`, `spriteCount` | sprite folder name + variant count |
 
 ### 2. Grade / lighting / atmosphere — `Sources/Renderer.swift`
@@ -169,12 +183,16 @@ ship a 2048px runtime path.
 ## Layout
 
 ```
-project.yml              xcodegen source of truth (Seasons.saver, SeasonsPreview, SeasonsShot, SeasonsTests)
-Sources/                 SeasonsView, Renderer, ParticleSystem, Mesh, SpriteLoader, Season, SeasonCatalog, Color
-Shaders/                 ShaderTypes.h + Particles/Post/Common .metal
-Resources/seasons/*.json season configs   Resources/sprites/<season>/   mesh albedo art
-tools/                   generate-sprites.md, process-sprites.sh, pack-sprites.sh, raw/, shot/, preview/
-docs/superpowers/        design spec + implementation plan
+project.yml              xcodegen source of truth (SeasonsApp, Seasons.saver, SeasonsPreview, SeasonsShot, SeasonsTests)
+Sources/                 engine shared by every target: SeasonsView, Renderer, ParticleSystem, Mesh, SpriteLoader,
+                         Season/SeasonCatalog, WindModel, Governor, and the display policies (DisplayPolicy,
+                         DisplayDecision, Panorama, AdaptiveCadence, FairSubmitCoordinator, QualityTier, ...)
+Shaders/                 ShaderTypes.h, ShaderCommon.h, Wind.h + Particles/Post/Common/Bake .metal
+Resources/seasons/*.json season and style configs   Resources/sprites/<set>/   per-species sprite art
+tools/                   app/ (menu-bar app), preview/, shot/, raw/, tests/, sprite scripts and validate_sprites.py
+scripts/build-dmg.sh     signed, notarized DMG for release
+docs/                    engine, config reference, add-a-season, sprite recipe, safe testing, crash analysis
+docs/superpowers/        original design spec + implementation plan
 reference/               the original web engine (design baseline)
 ```
 

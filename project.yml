@@ -99,6 +99,9 @@ targets:
       base:
         PRODUCT_NAME: "Seasons"
         PRODUCT_BUNDLE_IDENTIFIER: me.mdpj.SeasonsApp
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.entertainment
         PRODUCT_MODULE_NAME: Seasons
         GENERATE_INFOPLIST_FILE: "YES"
         SWIFT_OBJC_BRIDGING_HEADER: Shaders/ShaderTypes.h

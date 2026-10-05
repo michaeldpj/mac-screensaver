@@ -88,7 +88,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(idleItem)
 
         let external = NSMenuItem(
-            title: "External Displays — Ultra-Lite 30 FPS (Experimental)",
+            title: "External Displays — Ultra-Lite 30 FPS",
             action: #selector(toggleExternalUltraLite),
             keyEquivalent: ""
         )

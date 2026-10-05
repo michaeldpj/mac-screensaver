@@ -3,11 +3,13 @@
 All notable changes to this project documented here.
 
 Older dated entries below preserve historical implementation and art-generation decisions. Where they
-conflict with the Unreleased section or current runbooks, they are superseded history—not current guidance.
+conflict with the latest release section or current runbooks, they are superseded history—not current guidance.
 
-## [Unreleased]
+## [1.0.0] - 2026-10-04
 
 ### Added
+- Signed and notarized DMG download for the Seasons menu-bar app, built by `scripts/build-dmg.sh`
+  and published on GitHub Releases. The app now carries version 1.0.0 (build 1).
 - The Seasons menu-bar app now has a persisted **External Displays — Ultra-Lite 30 FPS
   (Experimental)** option. It selects the same bounded 2880/30 FPS path as the proven
   `SEASONS_EXT_ULTRALITE` test launch and survives normal launch and Launch at Login. Authorization is
@@ -17,6 +19,10 @@ conflict with the Unreleased section or current runbooks, they are superseded hi
 - Fixed named styles (Rain, Embers, Stars) silently falling back to Auto when picked from the menu: the persisted selection now round-trips as a raw style name (`Prefs.selectionName`), and the view resolves any unrecognized non-off name via the catalog regardless of whether it came from the env override or the picker.
 
 ### Changed
+- The menu item is now **External Displays — Ultra-Lite 30 FPS**, without "(Experimental)", since
+  the mode runs three externals as one panorama without the earlier DCP panics.
+- README audited against the code: install section, current layout and targets, the full style list,
+  and the `streak` glyph type.
 - External Ultra-Lite HQ now uses a 2880×1620 maximum source drawable at forced scale 1.0, 30 FPS,
   15% particles, sRGB BGRA8 with EDR off, and no bloom or DoF. Three maximum-size externals target
   30/30/30 at about 419.9M source pixels/s (2.25× the former 1920×1080 envelope). The no-effects

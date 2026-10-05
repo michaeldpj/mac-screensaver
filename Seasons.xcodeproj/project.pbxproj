@@ -562,9 +562,9 @@
 			projectRoot = "";
 			targets = (
 				3E202D5A8ED3C7256D696BB1 /* Seasons */,
-				29AF1D3406B33B43CC277142 /* SeasonsApp */,
-				E8042AD9C3384EC2AEDBAB4B /* SeasonsPreview */,
 				13B401C61E3EE295B6E6C628 /* SeasonsShot */,
+				E8042AD9C3384EC2AEDBAB4B /* SeasonsPreview */,
+				29AF1D3406B33B43CC277142 /* SeasonsApp */,
 				5D4809D1951306CF3B3445F0 /* SeasonsTests */,
 			);
 		};
@@ -806,13 +806,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsApp;
 				PRODUCT_MODULE_NAME = Seasons;
 				PRODUCT_NAME = Seasons;
@@ -995,13 +998,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.mdpj.SeasonsApp;
 				PRODUCT_MODULE_NAME = Seasons;
 				PRODUCT_NAME = Seasons;

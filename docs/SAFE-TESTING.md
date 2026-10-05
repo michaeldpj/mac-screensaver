@@ -8,7 +8,7 @@ flag as experimental. `SEASONS_ALL_DISPLAYS` exists only to reproduce the known-
 ## 0. Keep automatic launch disarmed
 
 - Leave the installed `Seasons.saver` disabled and macOS screensaver start time set to Never while testing.
-- Leave **External Displays — Ultra-Lite 30 FPS (Experimental)** off until the staged external tests pass.
+- Leave **External Displays — Ultra-Lite 30 FPS** off until the staged external tests pass.
 - Quit any older Seasons app before building. Do not copy a test bundle into `~/Library/Screen Savers`.
 - Keep unsaved work closed. A kernel panic is still possible once an external is deliberately animated.
 
@@ -100,7 +100,7 @@ and unflagged process between stages. A pass at one stage does not prove the nex
 `SEASONS_ALL_DISPLAYS`; it bypasses Ultra-Lite and exists only as a historical crash-reproduction path.
 
 After the full three-display sequence succeeds, the installed menu-bar app may persist the same
-authorization through **External Displays — Ultra-Lite 30 FPS (Experimental)**. This preference is
+authorization through **External Displays — Ultra-Lite 30 FPS**. This preference is
 app-scoped: normal Launch at Login reads it, while the preview and legacy saver do not. To fail closed,
 quit the active session, turn the menu item off, and leave `SEASONS_EXT_ULTRALITE` unset. The persisted
 option removes repeated Terminal setup; it does not change the residual AppleDCP risk or make
