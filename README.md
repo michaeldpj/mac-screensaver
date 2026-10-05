@@ -41,11 +41,11 @@ ditto "build/DerivedData/Build/Products/Release/Seasons.app" "$HOME/Applications
 codesign --force --deep --sign - "$HOME/Applications/Seasons.app"
 open "$HOME/Applications/Seasons.app"
 ```
-Use the leaf menu to choose a season, idle delay, and **Launch at Login**. On an external-only Mac,
-the default remains fail-closed black. After the staged tests in `docs/SAFE-TESTING.md` pass, enable
-**External Displays — Ultra-Lite 30 FPS (Experimental)**. That app-scoped choice persists across
-normal launches and login; the preview and legacy saver remain fail-closed unless separately
-authorized for a deliberate test.
+Use the leaf menu to choose a season, idle delay, and **Launch at Login**. To animate external
+displays, enable **External Displays — Ultra-Lite 30 FPS (Experimental)** in the same menu, which
+spreads one continuous scene across every connected screen. Until it is on, externals stay black,
+including on a Mac running with the lid closed. The choice persists across launches and login. It
+applies only to the menu-bar app, so the preview app and the legacy `.saver` keep externals black.
 
 **Preview app (development):**
 ```sh
